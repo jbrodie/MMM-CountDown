@@ -2,7 +2,7 @@
  *
  * MMM-CountDown
  *
- * 
+ *
  * MIT Licensed.
  *
  * Custom here your css module
@@ -23,6 +23,7 @@
 h1 {
   font-weight: normal;
   font-size:40px;
+  color: white;
 }
 
 li {
@@ -33,6 +34,7 @@ li {
   margin: 2px;
   text-transform: uppercase;
   background-color: rgba(255,255,255,.2);
+  color: white;
 }
 
 li span {
