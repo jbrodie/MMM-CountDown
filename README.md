@@ -20,11 +20,36 @@ var config = {
 }
 ```
 
+### Example Config
+```js
+var config = {
+    modules: [
+        {
+            module: 'MMM-CountDown',
+            position: 'top_center',
+            config: {
+                events: [
+                    {
+                        title: "Christmas Day",
+                        date: "2022-12-25 23:59:59"
+                    },
+                    {
+                        title: "New Years Eve",
+                        date: "2022-12-31 23:59:59"
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+
 ## Configuration options
 
 | Option           | Description                                                                                                           |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `event`          | *Required* Name of event to count down to (displayed above counter)                                                   |
+| `events`         | An array of hashes of {title: "Event Title", date: "YYYY-MM-DD HH:MM:SS+00:00"} to display.                           |
+|                  | Only the next upcoming event wil be displayed and will automatically progress to the next one when the date passes.   |
 | `date`           | *Required* Date to count down to (YYYY-MM-DD HH:MM:SS+00:00)                                                          |
 | `showHours`      | Decide whether or not to display the hours. Default is true                                                           |
 | `showMinutes`    | Decide whether or not to display the minutes. Default is true                                                         |
